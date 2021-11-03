@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_tool"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:background="@color/colorPrimaryDark">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_toolbar_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        android:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_title_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Scheduled Flights"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+
+</RelativeLayout>

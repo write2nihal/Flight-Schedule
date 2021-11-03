@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.FlightsFragment">
+
+    <include
+        android:id="@+id/demo"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        tools:listitem="@layout/flight_layout_adapter" />
+</LinearLayout>
